@@ -1,0 +1,7 @@
+#/////////////////////////////////////////////////////////
+#// Accept one no. from user and print that no. of * on screen(using for loop)
+#////////////////////////////////////////////////////////
+ 
+a = int(input("Enter your no.: "))
+for i in range(0,a):
+    print("*")
