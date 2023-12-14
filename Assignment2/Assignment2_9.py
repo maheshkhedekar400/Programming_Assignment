@@ -9,18 +9,15 @@ a = int(input("Enter the value of a : "))
 fact = 0
 non_fact = 0
 
-print("Factors :")
-for i in range(1,(a+1)):
-    if(a % i == 0):
-        print(i)
-        fact = fact + i
-        
-print("Non Factors : ")
-for i in range(1,(a+1)):
-    if(a % i != 0):
-        print(i)
-        non_fact = non_fact + i
 
-print("Sum of fact : ",fact)
-print("Sum of non_fact : ",non_fact)
+for i in range(1,a):
+    if(a % i == 0):
+        print("Factors :",i)
+        fact = fact + i
+    else:
+        print("Non Factors : ",i)
+        non_fact = non_fact + i  
+        
+print("Sum of Factors : ",fact)
+print("Sum of Non_factors : ",non_fact)
 print("Difference between factors and non-factors : ",fact - non_fact)

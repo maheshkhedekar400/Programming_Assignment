@@ -25,7 +25,7 @@ void main()
     while(a > 0)
     {
         reverse = a % 10;
-        printf("%d",reverse);
+        printf("%d \n",reverse);
         a = a / 10;
     }
 }

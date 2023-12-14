@@ -12,28 +12,13 @@ void main()
     printf("Enter the value of a : ");
     scanf("%d",&a);
 
-    int arr[] = {};
-    
-        
-    for(int i=1;i<=a;i++)
+    for(int i=a-1;i>=1;i--)
     {
         
         if(a % i == 0)
         {
-            int b = 0;
-            while(b<=a)
-            {
-            arr[b] = i;
-            b++;
-            }
+            printf("%d ",i);
         }
         
-    }
-
-    int c = sizeof(arr) / sizeof(arr[0]);
-    printf("%d",c);
-    for(int i=0;i<=c;i++)
-    {
-        printf("%d ",arr[i]);
     }
 }

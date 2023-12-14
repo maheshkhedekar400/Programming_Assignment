@@ -12,7 +12,7 @@ void main()
     scanf("%d",&a);
 
     int sum = 0;
-    for(int i=1;i<=a;i++)
+    for(int i=1;i<a;i++)
     {
         if(a % i != 0)
         {
@@ -21,6 +21,6 @@ void main()
             sum = sum + i;
         }
     }
-
+    printf("\n");
     printf("Total sum of its all non factors :  %d",sum);
 }

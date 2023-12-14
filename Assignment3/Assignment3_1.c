@@ -3,6 +3,7 @@
 //////////////////////////////////////////////
 
 #include<stdio.h>
+#include<stdbool.h>
 void main()
 {
     int a;
@@ -12,13 +13,19 @@ void main()
     int sum = 0;
     for(int i=2;i<=a;i++)
     {
-        for(int j=1;j<i;j++)
+        bool isprime = true;
+        for(int j=2;j<(i/2)+1;j++)
         {
             if(i % j == 0)
             {
+                isprime = false;
                 printf("%d ",i);
-                sum = sum + i;
             }
+        }
+
+        if(isprime)
+        {
+            sum = sum + i;
         }
     }
 

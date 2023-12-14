@@ -14,7 +14,7 @@ void main()
     scanf("%d",&a);
     
     int sum = 1;
-    for(int i=1;i<=a;i++)
+    for(int i=1;i<a;i++)
     {
         if(a % i == 0)
         {

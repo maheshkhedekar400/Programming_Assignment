@@ -14,30 +14,22 @@ void main()
     int fact = 0;
     int non_fact = 0;
 
-    printf("Factors :");
-    for(int i=1;i<=a;i++)
+    for(int i=1;i<a;i++)
     {
         if(a % i == 0)
         {
-            printf("%d ",i);
+            printf("Factor : %d\n",i);
             fact = fact + i;
         }
-    }
-
-    printf("\n");
-    printf("Non Factors : ");
-    for(int i=1;i<=a;i++)
-    {
-        if(a % i != 0)
+        else
         {
-            printf("%d ",i);
+            printf("Non_Factor : %d\n",i);
             non_fact = non_fact + i;
         }
-        
     }
     printf("\n");
-    printf("Sum of fact : %d\n",fact);
-    printf("Sum of non_fact : %d",non_fact);
+    printf("Sum of Factor : %d\n",fact);
+    printf("Sum of Non_Factor : %d",non_fact);
     printf("\n");
     printf("Difference between factors and non-factors : %d",fact - non_fact);
 }
